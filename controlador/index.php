@@ -7,10 +7,12 @@ class modeloController{
     }
     // MOSTRAR
     function index(){
-    	$actividadDir 	=	new Modelo();
-		$dato=$actividadDir->mostrarDirectGen("juan.carlos@uao.edu.co");
-		require_once("vista/index.php");
-    }
+		$query =$this->model->mostrarDirectGen();
+
+		
+		include_once('vista/index.php');
+		
+	}
 
 	/*
     // INSERTAR

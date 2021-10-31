@@ -106,16 +106,15 @@
                                 </thead>
 
                                 
+                                
                                     <tbody id="cuerpoTabla">
-                                    <?php 
-                                    foreach ($dato as $key => $value)
-                                        foreach ($value as $va ):
-                                            echo "<tr><td>".$va['documento']."</td><td>".$va['asignatura']."</td><td>S./".$va['estado']."</td>";
-                                            echo "<td><a href='index.php?m=editar&id=".$va['id']."'>ACTUALIZAR</a> <a href='index.php?m=eliminar&id=".$va['id']."'>ELIMINAR</a></td>";
-                                            echo "</tr>";
-                                        endforeach;
-                                    ?>
-
+                                    <?php foreach($query as $data): ?>
+                                    <tr>
+                                        <th><?php echo $data['correo_usuario']; ?></th>
+                                        <th><?php echo $data['codigo_prog']; ?></th>
+                                        
+                                    </tr>
+                                <?php endforeach; ?>
 
                                         
                                         
