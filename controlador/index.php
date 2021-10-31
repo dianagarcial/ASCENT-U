@@ -1,4 +1,6 @@
+
 <?php
+
 require_once("modelo/index.php");
 class modeloController{
 	private $model;
@@ -6,11 +8,12 @@ class modeloController{
         $this->model=new Modelo();
     }
     // MOSTRAR
+	
     function index(){
 		$query =$this->model->mostrarDirectGen();
 
 		
-		include_once('vista/index.php');
+		require_once('vista/index.php');
 		
 	}
 

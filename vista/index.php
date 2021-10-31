@@ -106,9 +106,10 @@
                                 </thead>
 
                                 
-                                
+
                                     <tbody id="cuerpoTabla">
-                                    <?php foreach($query as $data): ?>
+                                    <?php 
+                                    foreach($query as $data): ?>
                                     <tr>
                                         <th><?php echo $data['correo_usuario']; ?></th>
                                         <th><?php echo $data['codigo_prog']; ?></th>
